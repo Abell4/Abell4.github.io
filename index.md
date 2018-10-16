@@ -4,6 +4,7 @@
 	- github blog build
 	- [GitHub](http://github.com)
 	- [百度搜索](http://baidu.com)
+	- [测试内测链接](https://abell4.github.io/git/blog)
 	- git 命令
 - linux
 - hadoop

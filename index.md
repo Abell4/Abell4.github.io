@@ -3,6 +3,7 @@
 - git
 	- github blog build
 	- [GitHub](http://github.com)
+	- [百度搜索](http://baidu.com)
 	- git 命令
 - linux
 - hadoop

@@ -8,4 +8,5 @@
 	- [初学github的基础操作](https://abell4.github.io/git/Day)
 	- git 命令
 - linux
+	- [Linux基础入门](https://abell4.github.io/linux/oneday)
 - hadoop

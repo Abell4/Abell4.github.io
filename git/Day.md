@@ -10,6 +10,7 @@
 	7. touch 文件名称      创建文件
 	8. echo "内容" >> 文件名称     讲内容写进文件中如果文件不存在的话先创建后写入
 	9. rm -rf 文件名称      删除此文件（如果文件名称为 * 则删除此目录下所有文件）
+
 - [详细讲解](https://abell4.github.io/linux/jichuoneday)
 
 ### Git命令

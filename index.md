@@ -9,4 +9,5 @@
 	- git 命令
 - linux
 	- [Linux基础入门](https://abell4.github.io/linux/oneday)
+	- [Linux命令与应用基础篇(一)](https://abell4.github.io/linux/jichuoneday)
 - hadoop

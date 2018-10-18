@@ -55,7 +55,7 @@
 	- 修改配置文件/etc/selinux/config，将SELINUX=enforcing修改为SELINUX=disabled重启生效
 	
 
-	
+- [下一篇](https://abell4.github.io/linux/jichuoneday)
 - [返回主目录](https://abell4.github.io/)
 - [百度搜索](http://baidu.com) 
 

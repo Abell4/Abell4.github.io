@@ -4,6 +4,7 @@
 	- github blog build
 	- [GitHub](http://github.com)
 	- [百度搜索](http://baidu.com)
+	- [github的搭建基础语法](https://guides.github.com/features/mastering-markdown/)
 	- [测试内测链接](https://abell4.github.io/git/blog)
 	- [初学github的基础操作](https://abell4.github.io/git/Day)
 	- git 命令

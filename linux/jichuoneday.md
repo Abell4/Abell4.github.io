@@ -60,6 +60,6 @@
 			
 		
 	
-- [下一篇](https://abell4.github.io/)
+- [下一篇](https://abell4.github.io/linux/jichutwo)
 - [返回主目录](https://abell4.github.io/)
 - [百度搜索](http://baidu.com)

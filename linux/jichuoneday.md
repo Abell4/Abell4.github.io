@@ -5,7 +5,7 @@
 		- 参数:命令操作的对象 eg:文件,目录等
 		
 	### 常用操作命令(如图所示)
-![0GAN[G43L(WEB9AAZTHHRJE.png](https://upload-images.jianshu.io/upload_images/14477271-86a5989496c72cf7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![0GANG43LWEB9AAZTHHRJE.png](https://upload-images.jianshu.io/upload_images/14477271-86a5989496c72cf7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 		
 ## 文件与目录
 	### 显示文件和目录列表(list)

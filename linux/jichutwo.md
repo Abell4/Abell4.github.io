@@ -78,7 +78,7 @@
 		
 
 	
-- [下一篇:vi/vim文本操作](https://abell4.github.io/)
+- [下一篇:vi/vim文本操作](https://abell4.github.io/linux/bookone)
 - [返回主目录](https://abell4.github.io/)
 - [百度搜索](http://baidu.com)
 

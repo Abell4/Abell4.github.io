@@ -60,6 +60,24 @@
 		
 ![C}4NDH`@MFF1~4@V)WYDOI.png](https://upload-images.jianshu.io/upload_images/14477271-dd595bb0b32b9da9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 	
+	- bzip2 [-cdz] 文档名  
+		-c 将压缩的过程产生的数据输出到屏幕上
+		-d 解压缩的参数(decompress)
+		-z 压缩的参数(compress)
+### 打包
+	- tar [cvf]... 压缩名 文件名 (压缩文件)
+	- tar [xvf]... 文件名.tar    (解压缩文件)
+		-c：创建 .tar 格式的包文件
+		-x：解开.tar格式的包文件
+		-v：输出详细信息
+		-f：表示使用归档文件
+
+### ctrl + c 停止当前进程
+### ctrl + r 查看命令历史
+### ctrl + l 清屏，与clear命令作用相同
+		
+
+	
 - [下一篇](https://abell4.github.io/)
 - [返回主目录](https://abell4.github.io/)
 - [百度搜索](http://baidu.com)

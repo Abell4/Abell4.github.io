@@ -51,8 +51,15 @@
 ![XVI7{VOKDH2W9SIDR_KTTQ.png](https://upload-images.jianshu.io/upload_images/14477271-be6a73478064a10d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![10C6AIJ_@)N3X6LAJK%XF.png](https://upload-images.jianshu.io/upload_images/14477271-fb4d78f70166a076.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
+### 压缩
+	- gzip [选项] 压缩的文件名(解压缩)
+		-d 将压缩文件解压缩(decompress)
+		-l 显示压缩文件的大小,未压缩文件的大小,压缩比(list)
+		-v 显示文件名和压缩比(verbose)
+		-还有一个属性设置(虽然我也不是很明白,就截图了)
+		
+![C}4NDH`@MFF1~4@V)WYDOI.png](https://upload-images.jianshu.io/upload_images/14477271-dd595bb0b32b9da9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+	
 - [下一篇](https://abell4.github.io/)
 - [返回主目录](https://abell4.github.io/)
 - [百度搜索](http://baidu.com)

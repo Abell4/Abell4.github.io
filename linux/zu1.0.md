@@ -1,5 +1,5 @@
 # 用户和组
-## 了结用户与组的配置文件
+## 了解用户与组的配置文件
 ### 保存用户信息的文件：/etc/passwd
 ### 保存密码的文件：/etc/shadow
 ### 保存用户组的文件：/etc/group
@@ -53,10 +53,46 @@
 	- userdel [选项] 用户名
 				-r :把用户的宿主目录一并删除
 				
-				
+### 组的管理
+	- 如图所示: 组的配置文件路径及各部分作用
+	
+![%`Q0{S}R6}_ESJFDP~4PF$S.png](https://upload-images.jianshu.io/upload_images/14477271-4cf9c361269fb58f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+![H6`7083HGIT5HGIIN$7OFF.png](https://upload-images.jianshu.io/upload_images/14477271-da460782b7a5f933.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### 组命令管理
+#### 添加组账号
+	- groupadd -g  (指定组id)
 	
+#### 修改组
+	- groupmod [选项] 新组名 旧组名
+			-n (更改组名) 新组名 旧组名
+			-g：设置想要使用的GID
+			-o：使用已经存在的GID
+
+				
+#### 删除组
+	- groupdel <组账号名>
 	
+#### 显示当前用户所有的所属组
+	- groups [用户名]
+	
+## (最核心)文件及目录权限管理
+	- 权限 :
+		- 读(r) :读取文件的内容;列出目录里的对象
+		- 写(w) :允许修改文件;在目录里面新建或者删除文件
+		- 执行(x) :允许执行文件;允许进入目录
+	
+![IR9L751VGK5~`Q.png](https://upload-images.jianshu.io/upload_images/14477271-b0f7b19b3e843171.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### 数字权限
+		除了用字母rwx来表示权限，还可以使用3位数字来表 达文件或目录的权限
+			读：4
+			写：2
+			执行：1
+		
+
+
 	
 - [下一篇](https://abell4.github.io/)
 - [返回主目录](https://abell4.github.io/)

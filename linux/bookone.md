@@ -88,7 +88,7 @@
 
 	
 
-- [下一篇:用户与组的关系与操作](https://abell4.github.io/)
+- [下一篇:用户与组的关系与操作](https://abell4.github.io/linux/zu1.0)
 - [返回主目录](https://abell4.github.io/)
 - [百度搜索](http://baidu.com)		
 

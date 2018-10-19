@@ -13,4 +13,5 @@
 	- [Linux命令与应用基础篇(一)](https://abell4.github.io/linux/jichuoneday)
 	- [Linux命令与应用基础篇(二)](https://abell4.github.io/linux/jichutwo)
 	- [vi/vim文本编辑器](https://abell4.github.io/linux/bookone)
+	- [用户与组的关系与操作](https://abell4.github.io/linux/zu1.0)
 - hadoop

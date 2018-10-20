@@ -3,6 +3,9 @@
 - 工具篇
 	- [工具的安装方法](https://abell4.github.io/linux/basics/basics)
 	- [正则表达式(基础)](https://abell4.github.io/linux/basics/regular) 
+- 配置篇
+	- [配置java](http://github.com)
+	- [配置tomcat](http://github.com)
 - git
 	- github blog build
 	- [GitHub](http://github.com)

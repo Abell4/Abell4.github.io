@@ -31,7 +31,7 @@
 	  结合grep命令使用
 	  
 
-- [下一篇:正则表达式(基础)](https://abell4.github.io/)  
+- [下一篇:正则表达式(基础)](https://abell4.github.io/linux/basics/regular)  
 - [返回主目录](https://abell4.github.io/)
 - [百度搜索](http://baidu.com)
 	  

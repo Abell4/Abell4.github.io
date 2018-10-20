@@ -2,6 +2,7 @@
 ## 点击下面的链接将进入对应内容的博客
 - 工具篇
 	- [工具的安装方法](https://abell4.github.io/linux/basics/basics)
+	- [正则表达式(基础)](https://abell4.github.io/linux/basics/regular) 
 - git
 	- github blog build
 	- [GitHub](http://github.com)

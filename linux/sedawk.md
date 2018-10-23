@@ -36,3 +36,8 @@
 ### awk的完全形式
 	- ask options 选项 'BEGIN{} command END{}' file
 	- for(int i=0;count;i++)
+	
+	
+- [下一篇](https://abell4.github.io/)
+- [返回主目录](https://abell4.github.io/)
+- [百度搜索](http://baidu.com)

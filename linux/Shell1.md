@@ -55,6 +55,7 @@
 		- -f:依据-d的分隔符将一段信息分割成为数段.用-f取出第几段
 		- -c:指定几个分割符
 	- eg:
+	
 ![TIM截图20181023211240.png](https://upload-images.jianshu.io/upload_images/14477271-9d911be316917287.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 

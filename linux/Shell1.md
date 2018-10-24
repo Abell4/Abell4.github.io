@@ -59,7 +59,68 @@
 	
 ![TIM截图20181023211240.png](https://upload-images.jianshu.io/upload_images/14477271-9d911be316917287.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+## shell编程
+### shell中的变量
+	- shell中的变量分为"系统变量"与"用户自定义变量".可以通过set命令查看系统变量
+	- set (显示所有系统变量)
+### 自定义变量
+	- 变量名=变量值 
+![TIM截图20181024085832.png](https://upload-images.jianshu.io/upload_images/14477271-c0d50a47b3dded9f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+![TIM截图20181024191636.png](https://upload-images.jianshu.io/upload_images/14477271-c5ba920de9cd4b06.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### read命令:
+	- read -p "内容" -n(字符个数) -t(等待时间)
+
+### 将命令的返回值赋给变量
+	- ' '运行里面的命令,并显示或传参
+	- $( )等价于单引号
+
+### 取消变量
+	- unset 变量名
+
+### 特殊变量
+	
+![TIM截图20181024192533.png](https://upload-images.jianshu.io/upload_images/14477271-915ab5d0bb11560c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### 算数运算
+	- expr 变量 运算符 变量
+![TIM截图20181024192841.png](https://upload-images.jianshu.io/upload_images/14477271-ef782f6a2a304c87.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### 判断指令
+	- test命令
+		- 测试特定的表达式是否成立,当条件成立时,测试语句的返回值为0,否则为其他数值
+		- 格式: test 表达式
+
+### 文件测试
+	- 格式: [ 操作符 文件或目录 ]  注意 :括号的前后要有空格
+		- 常用的测试操作符
+		
+![TIM截图20181024193551.png](https://upload-images.jianshu.io/upload_images/14477271-f03f51a3f14a232a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![TIM截图20181024193715.png](https://upload-images.jianshu.io/upload_images/14477271-24fc430c43c258d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### 文件权限测试
+	- 格式: [ 操作符 文件或目录 ]
+![TIM截图20181024194032.png](https://upload-images.jianshu.io/upload_images/14477271-b8a150afbfe1ed05.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![TIM截图20181024194115.png](https://upload-images.jianshu.io/upload_images/14477271-8cb39238164fac48.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+	
+### 数值比较
+	- 格式: [ 整数1 操作符 整数2 ]
+![TIM截图20181024194328.png](https://upload-images.jianshu.io/upload_images/14477271-16751fe25a56eeab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### 字符串比较
+![TIM截图20181024194502.png](https://upload-images.jianshu.io/upload_images/14477271-6eeef22821ece820.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![TIM截图20181024194702.png](https://upload-images.jianshu.io/upload_images/14477271-6a29171cdd655432.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+
+	
+	
+	
+	
 
 - [返回主目录](https://abell4.github.io/)
 - [百度搜索](http://baidu.com)

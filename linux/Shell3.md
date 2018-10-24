@@ -1,26 +1,26 @@
-# shellº¯ÊıÓ¦ÓÃ:
-## shell×Ô¶¨Òåº¯Êı
+# shellå‡½æ•°åº”ç”¨:
+## shellè‡ªå®šä¹‰å‡½æ•°
 	-  [ function ] funname [()]
 	{
 		action;
 		[return int;]
 	}
 
-## ×¢Òâ:
-	1.±ØĞëÔÚµ÷ÓÃº¯ÊıµØ·½Ö®Ç°£¬ÏÈÉùÃ÷º¯Êı£¬shell½Å±¾ÊÇÖğĞĞÔËĞĞ¡£²»»áÏñÆäËüÓïÑÔÒ»ÑùÏÈÔ¤±àÒë
-	2.º¯Êı·µ»ØÖµ£¬Ö»ÄÜÍ¨¹ı$? ÏµÍ³±äÁ¿»ñµÃ£¬¿ÉÒÔÏÔÊ¾¼Ó£ºreturn ·µ»Ø£¬
-		Èç¹û²»¼Ó£¬½«ÒÔ×îºóÒ»ÌõÃüÁîÔËĞĞ½á¹û£¬×÷Îª·µ»ØÖµ¡£ returnºó¸úÊıÖµn(0-255)
+## æ³¨æ„:
+	1.å¿…é¡»åœ¨è°ƒç”¨å‡½æ•°åœ°æ–¹ä¹‹å‰ï¼Œå…ˆå£°æ˜å‡½æ•°ï¼Œshellè„šæœ¬æ˜¯é€è¡Œè¿è¡Œã€‚ä¸ä¼šåƒå…¶å®ƒè¯­è¨€ä¸€æ ·å…ˆé¢„ç¼–è¯‘
+	2.å‡½æ•°è¿”å›å€¼ï¼Œåªèƒ½é€šè¿‡$? ç³»ç»Ÿå˜é‡è·å¾—ï¼Œå¯ä»¥æ˜¾ç¤ºåŠ ï¼šreturn è¿”å›ï¼Œ
+		å¦‚æœä¸åŠ ï¼Œå°†ä»¥æœ€åä¸€æ¡å‘½ä»¤è¿è¡Œç»“æœï¼Œä½œä¸ºè¿”å›å€¼ã€‚ returnåè·Ÿæ•°å€¼n(0-255)
 		
-# Á·Ï°ÊµÀı
+# ç»ƒä¹ å®ä¾‹
 
-![TIM½ØÍ¼20181024204918.png](https://upload-images.jianshu.io/upload_images/14477271-ea0895dfc2ba2740.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181024204918.png](https://upload-images.jianshu.io/upload_images/14477271-ea0895dfc2ba2740.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![TIM½ØÍ¼20181024204852.png](https://upload-images.jianshu.io/upload_images/14477271-3596d3e684d11b7b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181024204852.png](https://upload-images.jianshu.io/upload_images/14477271-3596d3e684d11b7b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![TIM½ØÍ¼20181024204930.png](https://upload-images.jianshu.io/upload_images/14477271-7353e2eb30a07e28.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181024204930.png](https://upload-images.jianshu.io/upload_images/14477271-7353e2eb30a07e28.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![TIM½ØÍ¼20181024205020.png](https://upload-images.jianshu.io/upload_images/14477271-5052ca17809e5cae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181024205020.png](https://upload-images.jianshu.io/upload_images/14477271-5052ca17809e5cae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![TIM½ØÍ¼20181024205034.png](https://upload-images.jianshu.io/upload_images/14477271-29f65dba1f2421ac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181024205034.png](https://upload-images.jianshu.io/upload_images/14477271-29f65dba1f2421ac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 

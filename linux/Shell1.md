@@ -64,7 +64,8 @@
 	- shell中的变量分为"系统变量"与"用户自定义变量".可以通过set命令查看系统变量
 	- set (显示所有系统变量)
 ### 自定义变量
-	- 变量名=变量值 
+	- 变量名=变量值
+	
 ![TIM截图20181024085832.png](https://upload-images.jianshu.io/upload_images/14477271-c0d50a47b3dded9f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![TIM截图20181024191636.png](https://upload-images.jianshu.io/upload_images/14477271-c5ba920de9cd4b06.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -85,6 +86,7 @@
 
 ### 算数运算
 	- expr 变量 运算符 变量
+	
 ![TIM截图20181024192841.png](https://upload-images.jianshu.io/upload_images/14477271-ef782f6a2a304c87.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 判断指令
@@ -102,12 +104,14 @@
 
 ### 文件权限测试
 	- 格式: [ 操作符 文件或目录 ]
+	
 ![TIM截图20181024194032.png](https://upload-images.jianshu.io/upload_images/14477271-b8a150afbfe1ed05.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![TIM截图20181024194115.png](https://upload-images.jianshu.io/upload_images/14477271-8cb39238164fac48.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 	
 ### 数值比较
 	- 格式: [ 整数1 操作符 整数2 ]
+	
 ![TIM截图20181024194328.png](https://upload-images.jianshu.io/upload_images/14477271-16751fe25a56eeab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 字符串比较

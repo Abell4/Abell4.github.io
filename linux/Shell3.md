@@ -24,3 +24,9 @@
 ![TIM截图20181024205034.png](https://upload-images.jianshu.io/upload_images/14477271-29f65dba1f2421ac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
+
+
+
+- [shell(实例)的基础应用](https://abell4.github.io/linux/shell实例)
+- [返回主目录](https://abell4.github.io/)
+- [百度搜索](http://baidu.com)

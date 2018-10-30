@@ -21,6 +21,9 @@
 	- [vi/vim文本编辑器](https://abell4.github.io/linux/bookone)
 	- [用户与组的关系与操作](https://abell4.github.io/linux/zu1.0)
 	- [sed与awk的基础用法](https://abell4.github.io/linux/sedawk)
-	- [shell的基础应用](https://abell4.github.io/linux/Shell1)
+	- [shell(1)的基础应用](https://abell4.github.io/linux/Shell1)
+	- [shell(2)的基础应用](https://abell4.github.io/linux/Shell2)
+	- [shell(3)的基础应用](https://abell4.github.io/linux/Shell3)
+	- [shell(实例)的基础应用](https://abell4.github.io/linux/shell实例)
 
 - hadoop

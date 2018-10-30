@@ -125,7 +125,7 @@
 	
 	
 	
-
+- [下一篇:shell(2)的基础应用](https://abell4.github.io/linux/Shell2)
 - [返回主目录](https://abell4.github.io/)
 - [百度搜索](http://baidu.com)
 	

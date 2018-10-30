@@ -47,6 +47,7 @@
 			命令语句
 		done
 		
-		
+	
+- [下一篇:shell(3)的基础应用](https://abell4.github.io/linux/Shell3)	
 - [返回主目录](https://abell4.github.io/)
 - [百度搜索](http://baidu.com)

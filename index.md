@@ -27,3 +27,6 @@
 	- [shell(实例)的基础应用](https://abell4.github.io/linux/shell实例)
 
 - hadoop
+	- [Hadoop单点配置](https://abell4.github.io/hadoop/danhadoop)
+	- [Hadoop伪分布式配置](https://abell4.github.io/hadoop/weihadoop)
+	- [Hadoop完全分布式配置](https://abell4.github.io/hadoop/fenhadoop)

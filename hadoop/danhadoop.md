@@ -19,3 +19,12 @@
 
 ## 注意:在配置hadoop之前一定要配置java的jdk!!!!!!!!					
 						
+						
+						
+
+				
+				
+				
+- [下一篇:Hadoop伪分布式配置](https://abell4.github.io/hadoop/weihadoop)
+- [返回主目录](https://abell4.github.io/)
+- [百度搜索](http://baidu.com) 

@@ -58,5 +58,7 @@
 ![TIM截图20181030200847.png](https://upload-images.jianshu.io/upload_images/14477271-c15c645f24a7a0a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 	
 	
-
+- [下一篇:Hadoop完全分布式配置](https://abell4.github.io/hadoop/fenhadoop)
+- [返回主目录](https://abell4.github.io/)
+- [百度搜索](http://baidu.com) 
 

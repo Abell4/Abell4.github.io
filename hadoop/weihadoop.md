@@ -6,6 +6,7 @@
 ### 修改配置文件:
 	- 首先回到根目录下
 	- vim hadoop-2.7.3/etc/hadoop/hadoop-env.sh 打开此文件,修改javahome:  把自己的java配置路径写进去
+	
 ### vim hadoop-2.7.3/etc/hadoop/core_cite.xml 打开此文件
 	- <configuration></configuration>中添加下面的语句
 		- <property>

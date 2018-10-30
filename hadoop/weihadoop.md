@@ -1,24 +1,24 @@
-# hadoopµÄÎ±·Ö²¼Ê½ÅäÖÃ
-## Î±·Ö²¼Ê½µÄÅäÖÃÊÇ»ùÓÚµ¥µãhadoopµÄÅäÖÃµÄ.ËùÒÔÒªÏÈÅäºÃµ¥µãhadoop
-### ×¼±¸¹¤×÷:
-	- ÅäÖÃºÃµ¥µãhadoop
+# hadoopçš„ä¼ªåˆ†å¸ƒå¼é…ç½®
+## ä¼ªåˆ†å¸ƒå¼çš„é…ç½®æ˜¯åŸºäºå•ç‚¹hadoopçš„é…ç½®çš„.æ‰€ä»¥è¦å…ˆé…å¥½å•ç‚¹hadoop
+### å‡†å¤‡å·¥ä½œ:
+	- é…ç½®å¥½å•ç‚¹hadoop
 
-### ĞŞ¸ÄÅäÖÃÎÄ¼ş:
-	- Ê×ÏÈ»Øµ½¸ùÄ¿Â¼ÏÂ
-	- vim hadoop-2.7.3/etc/hadoop/hadoop-env.sh ´ò¿ª´ËÎÄ¼ş,ĞŞ¸Äjavahome:  °Ñ×Ô¼ºµÄjavaÅäÖÃÂ·¾¶Ğ´½øÈ¥
-### vim hadoop-2.7.3/etc/hadoop/core_cite.xml ´ò¿ª´ËÎÄ¼ş
-	- <configuration></configuration>ÖĞÌí¼ÓÏÂÃæµÄÓï¾ä
+### ä¿®æ”¹é…ç½®æ–‡ä»¶:
+	- é¦–å…ˆå›åˆ°æ ¹ç›®å½•ä¸‹
+	- vim hadoop-2.7.3/etc/hadoop/hadoop-env.sh æ‰“å¼€æ­¤æ–‡ä»¶,ä¿®æ”¹javahome:  æŠŠè‡ªå·±çš„javaé…ç½®è·¯å¾„å†™è¿›å»
+### vim hadoop-2.7.3/etc/hadoop/core_cite.xml æ‰“å¼€æ­¤æ–‡ä»¶
+	- <configuration></configuration>ä¸­æ·»åŠ ä¸‹é¢çš„è¯­å¥
 		- <property>
 			<name>hadoop.tmp.dir</name>
-			<value>Äã×Ô¼ºµÄ¸ùÄ¿Â¼ÎÄ¼şÂ·¾¶</value>
+			<value>ä½ è‡ªå·±çš„æ ¹ç›®å½•æ–‡ä»¶è·¯å¾„</value>
 		</property>
 		<property>
 			<name>fs.defaultFS</name>
-			<value>hdfs://×Ô¼ºµÄip:9000</value>
+			<value>hdfs://è‡ªå·±çš„ip:9000</value>
 		</property>
 		
-### vim hadoop-2.7.3/etc/hadoop/hdfs-site.xml ´ò¿ª´ËÎÄ¼ş
-	- <configuration></configuration>ÖĞÌí¼ÓÏÂÃæµÄÓï¾ä
+### vim hadoop-2.7.3/etc/hadoop/hdfs-site.xml æ‰“å¼€æ­¤æ–‡ä»¶
+	- <configuration></configuration>ä¸­æ·»åŠ ä¸‹é¢çš„è¯­å¥
 		- <property>
 			<name>dfs.namenode.name.dir</name>
 			<value>file:/home/baitian/dfs/name</value>
@@ -28,8 +28,8 @@
 			<value>file:/home/baitian/dfs/data</value>
 		</property>
 
-### vim hadoop-2.7.3/etc/hadoop/yarn-site.xml´ò¿ª´ËÎÄ¼ş
-	- <configuration></configuration>ÖĞÌí¼ÓÏÂÃæµÄÓï¾ä
+### vim hadoop-2.7.3/etc/hadoop/yarn-site.xmlæ‰“å¼€æ­¤æ–‡ä»¶
+	- <configuration></configuration>ä¸­æ·»åŠ ä¸‹é¢çš„è¯­å¥
 		- <property>
 			<name>mapreduce.framework,name</name>
 			<value>yarn</value>
@@ -39,23 +39,23 @@
 			<value>mapreduce_shuffle</value>
 		</property>
 
-### vim hadoop-2.7.3/etc/hadoop/mapred-site.xml´ò¿ª´ËÎÄ¼ş
-	- <configuration></configuration>ÖĞÌí¼ÓÏÂÃæµÄÓï¾ä
+### vim hadoop-2.7.3/etc/hadoop/mapred-site.xmlæ‰“å¼€æ­¤æ–‡ä»¶
+	- <configuration></configuration>ä¸­æ·»åŠ ä¸‹é¢çš„è¯­å¥
 		- <property>
 			<name>mapreduce.framework.name</name>
 			<value>yarn</value>
 		</property>
 
-### ÅäÖÃºÃÒÔºó :
-	- hadoop namenode -format  Ö´ĞĞ´ËÃüÁî
+### é…ç½®å¥½ä»¥å :
+	- hadoop namenode -format  æ‰§è¡Œæ­¤å‘½ä»¤
 	
-![TIM½ØÍ¼20181030200631.png](https://upload-images.jianshu.io/upload_images/14477271-2e7343c59cc13820.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181030200631.png](https://upload-images.jianshu.io/upload_images/14477271-2e7343c59cc13820.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-	- ³öÏÖ´ËÃüÁî¾ÍËµÃ÷³É¹¦
-	- start-all.sh Ö´ĞĞ´ËÃüÁî
-	- ÓÃ  jpsÀ´ÑéÖ¤ÊÇ·ñ³É¹¦
+	- å‡ºç°æ­¤å‘½ä»¤å°±è¯´æ˜æˆåŠŸ
+	- start-all.sh æ‰§è¡Œæ­¤å‘½ä»¤
+	- ç”¨  jpsæ¥éªŒè¯æ˜¯å¦æˆåŠŸ
 	
-![TIM½ØÍ¼20181030200847.png](https://upload-images.jianshu.io/upload_images/14477271-c15c645f24a7a0a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181030200847.png](https://upload-images.jianshu.io/upload_images/14477271-c15c645f24a7a0a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 	
 	
 

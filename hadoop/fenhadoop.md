@@ -1,30 +1,30 @@
-# hadoopµÄÍêÈ«·Ö²¼Ê½ÅäÖÃ
-## ÏëÒªÅäÖÃºÃhadoopÍêÈ«·Ö²¼Ê½,Ê×ÏÈÒªÈ·¶¨Ò»Ì¨namenodeĞéÄâ»ú
-### È·¶¨ºÃnamenodeºó½øĞĞ hadoopµÄÎ±·Ö²¼Ê½ÅäÖÃÎÄ¼ş¸Ä±ä.
+# hadoopçš„å®Œå…¨åˆ†å¸ƒå¼é…ç½®
+## æƒ³è¦é…ç½®å¥½hadoopå®Œå…¨åˆ†å¸ƒå¼,é¦–å…ˆè¦ç¡®å®šä¸€å°namenodeè™šæ‹Ÿæœº
+### ç¡®å®šå¥½namenodeåè¿›è¡Œ hadoopçš„ä¼ªåˆ†å¸ƒå¼é…ç½®æ–‡ä»¶æ”¹å˜.
 
-### ÅäÖÃºÃºó ´´½¨Èı¸öµ¥µãhadoopµÄĞéÄâ»ú 
-	- scp -r ÄãÒª´«µÄhadoopÅäÖÃÎÄ¼ş ÓÃ»§Ãû@ip:´æ·ÅµÄÂ·¾¶
-	- ÕâÑù¾ÍÅäÖÃºÃÁËÈı¸ödatanode
+### é…ç½®å¥½å åˆ›å»ºä¸‰ä¸ªå•ç‚¹hadoopçš„è™šæ‹Ÿæœº 
+	- scp -r ä½ è¦ä¼ çš„hadoopé…ç½®æ–‡ä»¶ ç”¨æˆ·å@ip:å­˜æ”¾çš„è·¯å¾„
+	- è¿™æ ·å°±é…ç½®å¥½äº†ä¸‰ä¸ªdatanode
 
-### È»ºó¸ÄnamedodeÀïµÄvim hadoop-2.7.3/etc/hadoop/slaves 
-	- ÔÚ´ËÎÄ¼şÏÂ,Ìí¼ÓÄãµÄÈı¸ödatanodeµÄipµØÖ·
+### ç„¶åæ”¹namedodeé‡Œçš„vim hadoop-2.7.3/etc/hadoop/slaves 
+	- åœ¨æ­¤æ–‡ä»¶ä¸‹,æ·»åŠ ä½ çš„ä¸‰ä¸ªdatanodeçš„ipåœ°å€
 
-### ¸ÄÒ»ÏÂvim /etc/hosts 
-	- ÔÚ´ËÎÄ¼şÖĞÌí¼ÓÈı¸ödatanodeµÄipµØÖ·ºÍËûÃÇµÄÃû³Æ,±ãÓÚ¼ÇÒä
+### æ”¹ä¸€ä¸‹vim /etc/hosts 
+	- åœ¨æ­¤æ–‡ä»¶ä¸­æ·»åŠ ä¸‰ä¸ªdatanodeçš„ipåœ°å€å’Œä»–ä»¬çš„åç§°,ä¾¿äºè®°å¿†
 	
-### ÅäÖÃºÃÒÔºó :
-	- hadoop namenode -format  Ö´ĞĞ´ËÃüÁî
+### é…ç½®å¥½ä»¥å :
+	- hadoop namenode -format  æ‰§è¡Œæ­¤å‘½ä»¤
 	
-![TIM½ØÍ¼20181030200631.png](https://upload-images.jianshu.io/upload_images/14477271-2e7343c59cc13820.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181030200631.png](https://upload-images.jianshu.io/upload_images/14477271-2e7343c59cc13820.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-	- ³öÏÖ´ËÃüÁî¾ÍËµÃ÷³É¹¦
-	- start-all.sh Ö´ĞĞ´ËÃüÁî
-	- ÓÃ  jpsÀ´ÑéÖ¤ÊÇ·ñ³É¹¦
+	- å‡ºç°æ­¤å‘½ä»¤å°±è¯´æ˜æˆåŠŸ
+	- start-all.sh æ‰§è¡Œæ­¤å‘½ä»¤
+	- ç”¨  jpsæ¥éªŒè¯æ˜¯å¦æˆåŠŸ
 	
-![TIM½ØÍ¼20181030200847.png](https://upload-images.jianshu.io/upload_images/14477271-c15c645f24a7a0a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181030200847.png](https://upload-images.jianshu.io/upload_images/14477271-c15c645f24a7a0a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 	
-### ÔÚ²é¿´datanodeÊÇ·ñ³É¹¦:
-	- ÓÃ  jpsÀ´ÑéÖ¤ÊÇ·ñ³É¹¦
+### åœ¨æŸ¥çœ‹datanodeæ˜¯å¦æˆåŠŸ:
+	- ç”¨  jpsæ¥éªŒè¯æ˜¯å¦æˆåŠŸ
 	
-![TIM½ØÍ¼20181030204237.png](https://upload-images.jianshu.io/upload_images/14477271-09521ee6ff4b4f60.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TIMæˆªå›¾20181030204237.png](https://upload-images.jianshu.io/upload_images/14477271-09521ee6ff4b4f60.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

@@ -1,5 +1,5 @@
-# outputformatµÄ×Ô¶¨Òå¸ÄĞ´:
-## Ö÷·½·¨:
+# outputformatçš„è‡ªå®šä¹‰æ”¹å†™:
+## ä¸»æ–¹æ³•:
 ### ...........................................
 	- public static void main(String[] args)
 		    throws Exception
@@ -17,7 +17,7 @@
 		    Job job = Job.getInstance(conf, "word count");
 		    job.setJarByClass(MyOutputText.class);
 		    job.setMapperClass(MyOutputMap.class);
-			- ´Ë´¦ÊÇµ÷ÓÃ×Ô¶¨ÒåµÄoutputformatµÄ·½·¨ 
+			- æ­¤å¤„æ˜¯è°ƒç”¨è‡ªå®šä¹‰çš„outputformatçš„æ–¹æ³• 
 		    job.setOutputFormatClass(MyOutputFormat.class);
 		    job.setNumReduceTasks(0);
     	   // job.setCombinerClass(FileReduce.class);
@@ -32,7 +32,7 @@
 		    System.exit(job.waitForCompletion(true) ? 0 : 1);
 		  }
 		  
-## MyOutputFormatµÄ·½·¨´úÂë:
+## MyOutputFormatçš„æ–¹æ³•ä»£ç :
 ###	.....................................
 	- public class MyOutputFormat extends FileOutputFormat<Text, NullWritable>{
 
@@ -53,7 +53,7 @@
 
 }
 
-## MyRecordWriter·½·¨Ğ´´úÂë:
+## MyRecordWriteræ–¹æ³•å†™ä»£ç :
 ### ..................................
 	- public class MyRecordWriter extends RecordWriter<Text,NullWritable>{
 	private FSDataOutputStream success;
@@ -94,7 +94,7 @@
 
 }
 
-## map·½·¨µÄ´úÂë:
+## mapæ–¹æ³•çš„ä»£ç :
 ### ............................
 	- public class MyOutputMap extends Mapper<Object, Text, Text,NullWritable 	>{  
 	private  Text resText = new  Text();

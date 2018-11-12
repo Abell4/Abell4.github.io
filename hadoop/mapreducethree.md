@@ -1,5 +1,5 @@
-# inputformatµÄ¸ÄĞ´:
-## textÖ÷·½·¨:
+# inputformatçš„æ”¹å†™:
+## textä¸»æ–¹æ³•:
 ### .......................
 	- public static void main(String[] args)
 		    throws Exception
@@ -17,10 +17,10 @@
 		    Job job = Job.getInstance(conf, "word count");
 		    job.setJarByClass(MyInputTest.class);
 		    job.setMapperClass(MyIntoutMap.class);
-			- ´ËÓï¾ä¾ÍÊÇ×Ô¶¨ÒåinputformatµÄµ÷ÓÃÓï¾ä
+			- æ­¤è¯­å¥å°±æ˜¯è‡ªå®šä¹‰inputformatçš„è°ƒç”¨è¯­å¥
 		    job.setInputFormatClass(MyInputFormat.class);
 		   // job.setOutputFormatClass(MyOutputFormat.class);
-		   -  ÒòÎªÊÇ²âÊÔºÍÁ·Ï°,Ã»ÓĞÓÃreduceµÄ±ØÒª,ËùÒÔĞ´ÏÂÏÂÃæµÄÃüÁî
+		   -  å› ä¸ºæ˜¯æµ‹è¯•å’Œç»ƒä¹ ,æ²¡æœ‰ç”¨reduceçš„å¿…è¦,æ‰€ä»¥å†™ä¸‹ä¸‹é¢çš„å‘½ä»¤
 		    job.setNumReduceTasks(0);
     	   // job.setCombinerClass(FileReduce.class);
 		    job.setReducerClass(OneAndoneReduce.class);
@@ -34,17 +34,17 @@
 		    System.exit(job.waitForCompletion(true) ? 0 : 1);
 		  }
 		  
-## inputformatµÄ·½·¨µÄ´úÂë:
+## inputformatçš„æ–¹æ³•çš„ä»£ç :
 ### .................................
-	- Èç¹ûÒª×Ô¶¨ÒåinputĞÂ½¨µÄÀà¾ÍÒ»¶¨Òª¼Ì³ĞFileInputFormat,ÕâÑù²ÅÄÜµ÷ÓÃ
+	- å¦‚æœè¦è‡ªå®šä¹‰inputæ–°å»ºçš„ç±»å°±ä¸€å®šè¦ç»§æ‰¿FileInputFormat,è¿™æ ·æ‰èƒ½è°ƒç”¨
 	- public class MyInputFormat extends FileInputFormat<Text, NullWritable>{
-		- ÖØĞ´µÄ´Ë·½·¨ÊÇÈ·¶¨ÊÇ·ñ·ÖÆ¬,ÒÔ¼°Ïà¹Ø²Ù×÷
+		- é‡å†™çš„æ­¤æ–¹æ³•æ˜¯ç¡®å®šæ˜¯å¦åˆ†ç‰‡,ä»¥åŠç›¸å…³æ“ä½œ
 	@Override
 	protected boolean isSplitable(JobContext context, Path filename) {
 		// TODO Auto-generated method stub
 		return false;
 	}
-		- ´ËÖØĞ´·½·¨ÊÇ¶ÔÊı¾İ¼ÇĞÔ´«ÊäµÄ·½·¨;Òò´ËÒªÒıÓÃMyRecordReardÀà;
+		- æ­¤é‡å†™æ–¹æ³•æ˜¯å¯¹æ•°æ®è®°æ€§ä¼ è¾“çš„æ–¹æ³•;å› æ­¤è¦å¼•ç”¨MyRecordReardç±»;
 	@Override
 	public RecordReader<Text, NullWritable> createRecordReader(InputSplit arg0, TaskAttemptContext arg1)
 			throws IOException, InterruptedException {
@@ -57,10 +57,10 @@
 
 		}
 
-## 	MyRecordReardµÄ·½·¨´úÂë:
+## 	MyRecordReardçš„æ–¹æ³•ä»£ç :
 ### ...................................
 	- public class MyRecordReard extends RecordReader<Text, NullWritable>{
-		- ÉèÖÃÊôĞÔ,ÒÔ±ãÓÚÏÂÃæÊ¹ÓÃ
+		- è®¾ç½®å±æ€§,ä»¥ä¾¿äºä¸‹é¢ä½¿ç”¨
 		private FileSplit fileSplit ;
 		private Configuration conf;
 		private boolean result = false;
@@ -72,7 +72,7 @@
 				fileSplit = (FileSplit) arg0; 
 				conf =arg1.getConfiguration();
 			}
-			- ¶ÔÊı¾İ´¦Àí½øĞĞÅĞ¶Ï
+			- å¯¹æ•°æ®å¤„ç†è¿›è¡Œåˆ¤æ–­
 		@Override
 		public boolean nextKeyValue() throws IOException, InterruptedException {
 			// TODO Auto-generated method stub
@@ -94,7 +94,7 @@
 				// TODO Auto-generated method stub
 				
 			}
-			- ÏÂÃæÁ¬¸öÖØĞ´¾ÍÊÇ°ÑreturnµÄ´«³ö¶ÔÏó¸Ä³É¶ÔÓ¦µÄkeyÓëvakue¾ÍºÃ
+			- ä¸‹é¢è¿ä¸ªé‡å†™å°±æ˜¯æŠŠreturnçš„ä¼ å‡ºå¯¹è±¡æ”¹æˆå¯¹åº”çš„keyä¸vakueå°±å¥½
 			@Override
 			public Text getCurrentKey() throws IOException, InterruptedException {
 				// TODO Auto-generated method stub
@@ -109,7 +109,7 @@
 
 
 			@Override
-			// ½ø¶È
+			// è¿›åº¦
 			public float getProgress() throws IOException, InterruptedException {
 				// TODO Auto-generated method stub
 				return (float)(result?1.0:0.0);
@@ -120,7 +120,7 @@
 
 		}
 
-## map·½·¨
+## mapæ–¹æ³•
 ### .........................
 	- public class MyIntoutMap extends Mapper<Text, NullWritable, Text, NullWritable> {
 	@Override
@@ -132,5 +132,5 @@
 	}
 }
 
-### ×Ü½á:
-	- ´Ë·½·¨¾ÍÊÇ¶Ôinput½øĞĞ¸ÄĞ´,ÕâÑù²ÅÄÜ×öµ½Ëæ×Ô¼ºÒâÔ¸µÄÊ¹ÓÃ,·½±ã×Ô¼ºµÄÊäÈë,¶øÇÒ¾Í²»ÔÚĞèÒª¹Ì¶¨µÄÀàĞÍÊäÈëÁË
+### æ€»ç»“:
+	- æ­¤æ–¹æ³•å°±æ˜¯å¯¹inputè¿›è¡Œæ”¹å†™,è¿™æ ·æ‰èƒ½åšåˆ°éšè‡ªå·±æ„æ„¿çš„ä½¿ç”¨,æ–¹ä¾¿è‡ªå·±çš„è¾“å…¥,è€Œä¸”å°±ä¸åœ¨éœ€è¦å›ºå®šçš„ç±»å‹è¾“å…¥äº†

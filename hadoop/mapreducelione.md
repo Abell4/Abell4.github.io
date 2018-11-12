@@ -1,8 +1,8 @@
-# mapreduceeµÄÊµÀı2:
-## ±¾ÊµÀıÖ÷ÒªÊÇÁ·Ï°ÔÚ±àĞ´mapreduceÊ±ÊäÈëÓëÊä³öµÄÀàµÈÊµ¼ÊÓ¦ÓÃ:
-### ¼ÆËãÉÏÏÂĞĞÁ÷Á¿ÓëÁ÷Á¿×ÜºÍ:
-	- Éú³ÉÀà:
-		- ±¾·½·¨ÖĞÎÒ»¹»áÖğ²½±ê×¢Ò»Ğ´»ù´¡µ÷ÊÔ
+# mapreduceeçš„å®ä¾‹2:
+## æœ¬å®ä¾‹ä¸»è¦æ˜¯ç»ƒä¹ åœ¨ç¼–å†™mapreduceæ—¶è¾“å…¥ä¸è¾“å‡ºçš„ç±»ç­‰å®é™…åº”ç”¨:
+### è®¡ç®—ä¸Šä¸‹è¡Œæµé‡ä¸æµé‡æ€»å’Œ:
+	- ç”Ÿæˆç±»:
+		- æœ¬æ–¹æ³•ä¸­æˆ‘è¿˜ä¼šé€æ­¥æ ‡æ³¨ä¸€å†™åŸºç¡€è°ƒè¯•
 			- public class stearmbear  implements WritableComparable {
 		private int  upload;
 		private int download;
@@ -25,12 +25,12 @@
 		public void setSum(int sum) {
 			this.sum = sum;
 		}
-		- Õâ¸öÊÇ¹¹Ôì·½·¨.×¢Òâ:Ò»¶¨ÒªÉú³ÉÒ»¸öÎŞ²Î¹¹Ôì
+		- è¿™ä¸ªæ˜¯æ„é€ æ–¹æ³•.æ³¨æ„:ä¸€å®šè¦ç”Ÿæˆä¸€ä¸ªæ— å‚æ„é€ 
 		public stearmbear() {
 			
 		}
-		- ÏÂÃæÁ½¸öÊÇ¼Ì³Ğ(implements)WritableËùÉú³ÉµÄ·½·¨:
-			- Ö÷ÒªÓÃÍ¾ÊÇÔÚĞ´ÈëÊ±½øĞĞĞòÁĞ»¯Óë·´ĞòÁĞ»¯
+		- ä¸‹é¢ä¸¤ä¸ªæ˜¯ç»§æ‰¿(implements)Writableæ‰€ç”Ÿæˆçš„æ–¹æ³•:
+			- ä¸»è¦ç”¨é€”æ˜¯åœ¨å†™å…¥æ—¶è¿›è¡Œåºåˆ—åŒ–ä¸ååºåˆ—åŒ–
 		@Override
 		public void readFields(DataInput arg0) throws IOException {
 			// TODO Auto-generated method stub
@@ -46,33 +46,33 @@
 		arg0.writeInt(this.download);
 		arg0.writeInt(this.sum);
 		}
-		- ÏÂÃæÁ½¸öÊÇ¼Ì³Ğ(implements)ComparableËù²úÉúµÄ·½·¨:
-			- Ö÷ÒªÊÇÓÃÓÚ¶ÔÊäÈëµÄÊı¾İ½øĞĞÅÅĞò: 
+		- ä¸‹é¢ä¸¤ä¸ªæ˜¯ç»§æ‰¿(implements)Comparableæ‰€äº§ç”Ÿçš„æ–¹æ³•:
+			- ä¸»è¦æ˜¯ç”¨äºå¯¹è¾“å…¥çš„æ•°æ®è¿›è¡Œæ’åº: 
 		@Override
 		public int compareTo(Object o) {
 			
 			// TODO Auto-generated method stub
 			stearmbear bin = (stearmbear)o;
-			- ÕâÌõ¾ÍÊÇ¿ØÖÆÅÅĞòµÄÉı½µ
+			- è¿™æ¡å°±æ˜¯æ§åˆ¶æ’åºçš„å‡é™
 			return this.sum > bin.sum ?1:-1;
 		}
-		- Îªtostring·½·¨:Ò»°ã»á½øĞĞ¸ÄÔì,¸ÄÔì³ÉËùÊÊÓ¦µÄĞÎÊ½,
+		- ä¸ºtostringæ–¹æ³•:ä¸€èˆ¬ä¼šè¿›è¡Œæ”¹é€ ,æ”¹é€ æˆæ‰€é€‚åº”çš„å½¢å¼,
 		@Override
 		public String toString() {
 			return "stearmbear [upload=" + upload + ", download=" + download + ", sum=" + sum + "]";
 		}
 	
-### ½øĞĞmap·½·¨µÄ±àĞ´:
+### è¿›è¡Œmapæ–¹æ³•çš„ç¼–å†™:
 	- public class bearmapper extends Mapper<Object, Text, Text, stearmbear> {
-		- ´Ë´¦µÄ·ºĞÍ×¢Òâ:
-			- »ù±¾ÉÏÊäÈëµÄÀàĞÍ¶¼ÊÇObjectÓëText,ºóÁ½¸öÎªÊä³öÀàĞÍ(Ò²¾ÍÊÇ´«µ½reduceµÄÀàĞÍ);ËùÒÔĞ´µÄÊ±ºòÒ»¶¨ÒªÉ÷ÖØ,²»È»»á³öÏÖ¸ñÊ½´íÎó
+		- æ­¤å¤„çš„æ³›å‹æ³¨æ„:
+			- åŸºæœ¬ä¸Šè¾“å…¥çš„ç±»å‹éƒ½æ˜¯Objectä¸Text,åä¸¤ä¸ªä¸ºè¾“å‡ºç±»å‹(ä¹Ÿå°±æ˜¯ä¼ åˆ°reduceçš„ç±»å‹);æ‰€ä»¥å†™çš„æ—¶å€™ä¸€å®šè¦æ…é‡,ä¸ç„¶ä¼šå‡ºç°æ ¼å¼é”™è¯¯
 		private Text phonetext  = new Text();
 		private stearmbear stearmbear = new stearmbear(); 
 		@Override
 		protected void map(Object key, Text value, Mapper<Object, Text, Text, stearmbear>.Context context)
 				throws IOException, InterruptedException {
 			// TODO Auto-generated method stub
-			- ´Ë´¦ÓÃÀ´½ØÈ¡×Ö¶Î,À´ÅäºÏÄãµÄĞèÇó
+			- æ­¤å¤„ç”¨æ¥æˆªå–å­—æ®µ,æ¥é…åˆä½ çš„éœ€æ±‚
 			String[] vals = value.toString().split("\\s+");
 			String phone = vals[1];
 			String downsteam = vals[vals.length-2];
@@ -82,18 +82,18 @@
 			int sum = parseInt+parseInt1;
 			//Text text = new Text();
 			//text.set(phone);
-			- °ÑËù½ØÈ¡µÄÊı¾İ´æµ½ÏàÓ¦µÄÀàÖĞ
+			- æŠŠæ‰€æˆªå–çš„æ•°æ®å­˜åˆ°ç›¸åº”çš„ç±»ä¸­
 			stearmbear.setUpload(parseInt1);
 			stearmbear.setDownload(parseInt);
 			stearmbear.setSum(sum);
-			- ´æÈëÖ÷½¨ÖĞ
+			- å­˜å…¥ä¸»å»ºä¸­
 			phonetext.set(phone);
-			- ´«Èëreduce·½·¨ÖĞ
+			- ä¼ å…¥reduceæ–¹æ³•ä¸­
 			context.write(phonetext , stearmbear);
 		}
 	}
 	
-### ½øĞĞreduce·½·¨µÄ±àĞ´:
+### è¿›è¡Œreduceæ–¹æ³•çš„ç¼–å†™:
 	- public class bearreducer extends Reducer<Text, stearmbear, Text, stearmbear>  {
 	private stearmbear stearmbear = new stearmbear();
 	@Override
@@ -114,7 +114,7 @@
 		context.write(key, stearmbear);
 	}
 	
-### Ö÷·½·¨µÄ±àĞ´
+### ä¸»æ–¹æ³•çš„ç¼–å†™
 	- public static void main(String[] args)
 			    throws Exception
 			  {
@@ -126,17 +126,17 @@
 			      System.exit(2);
 			    }
 			    Job job = Job.getInstance(conf, "word count");
-				- ´ËjobÀïĞ´µÄÊÇÖ÷ÀàÃû
+				- æ­¤jobé‡Œå†™çš„æ˜¯ä¸»ç±»å
 			    job.setJarByClass(beartset.class);
-				- ´ËjobĞ´µÄÊÇmap·½·¨
+				- æ­¤jobå†™çš„æ˜¯mapæ–¹æ³•
 			    job.setMapperClass(bearmapper.class);
-				- ´ËjobÀïĞ´µÄcombiner(reduce·½·¨).ÔÚÔËĞĞreduceÖ®Ç°ÔËĞĞ,½ÚÔ¼Õ¼ÓÃ
+				- æ­¤jobé‡Œå†™çš„combiner(reduceæ–¹æ³•).åœ¨è¿è¡Œreduceä¹‹å‰è¿è¡Œ,èŠ‚çº¦å ç”¨
 			    job.setCombinerClass(bearreducer.class);
-				- ´ËjobÖĞĞ´µÄÊÇreduceµÄÀàÃû
+				- æ­¤jobä¸­å†™çš„æ˜¯reduceçš„ç±»å
 			    job.setReducerClass(bearreducer.class);
-				-´ËjobÖĞĞ´µÄÊÇkeyµÄÓ¦ÓÃÀà
+				-æ­¤jobä¸­å†™çš„æ˜¯keyçš„åº”ç”¨ç±»
 			    job.setOutputKeyClass(Text.class);
-				- ´ËjobÖĞĞ´µÄÊÇvalueµÄÓ¦ÓÃÀà
+				- æ­¤jobä¸­å†™çš„æ˜¯valueçš„åº”ç”¨ç±»
 			    job.setOutputValueClass(stearmbear.class);
 			    for (int i = 0; i < otherArgs.length - 1; i++) {
 			      FileInputFormat.addInputPath(job, new Path(otherArgs[i]));

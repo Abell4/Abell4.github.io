@@ -1,9 +1,9 @@
-# word countµÄ½²½âÓëĞèÇó¸ÄĞ´
-## word countµÄ´úÂë½²½â:
-	- ±¾·½·¨Ö÷ÒªÊÇÓÃÀ´Í³¼ÆÏàÍ¬×Ö¶Î.
+# word countçš„è®²è§£ä¸éœ€æ±‚æ”¹å†™
+## word countçš„ä»£ç è®²è§£:
+	- æœ¬æ–¹æ³•ä¸»è¦æ˜¯ç”¨æ¥ç»Ÿè®¡ç›¸åŒå­—æ®µ.
 	
-### ÍêÕû´úÂë:
-		- map·½·¨:
+### å®Œæ•´ä»£ç :
+		- mapæ–¹æ³•:
 	- public static class TokenizerMapper
 		extends Mapper<Object, Text, Text, IntWritable>
 		{
@@ -22,7 +22,7 @@
 			}
 		}
 		
-		- Reducer·½·¨:
+		- Reduceræ–¹æ³•:
 	- public static class IntSumReducer
 			extends Reducer<Text, IntWritable, Text, IntWritable>
 		{
@@ -40,7 +40,7 @@
 			}
 		}
 		
-		- Ö÷·½·¨:ÒÔµ÷ÓÃjobÎªÖ÷. 
+		- ä¸»æ–¹æ³•:ä»¥è°ƒç”¨jobä¸ºä¸». 
 	- public static void main(String[] args)
 		throws Exception
 		{

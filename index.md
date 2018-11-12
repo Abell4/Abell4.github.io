@@ -31,4 +31,16 @@
 	- [Hadoop伪分布式配置](https://abell4.github.io/hadoop/weihadoop)
 	- [Hadoop完全分布式配置](https://abell4.github.io/hadoop/fenhadoop)
 	- hdfs介绍
+		- [hdfs讲解](https://abell4.github.io/hadoop/hdfs)
+		- [hdfs的应用](https://abell4.github.io/hadoop/2hdfs)
 	- mapreduce介绍
+		- [mapperreduce的讲解(1)](https://abell4.github.io/hadoop/mapreduce)
+		- [mapperreduce的讲解(2)]()
+		- [mapperreduce的wordcout展示:](https://abell4.github.io/hadoop/mapreducejing)
+		- [mapperreduce的应用(1)](https://abell4.github.io/hadoop/mapreducelione)
+		- [mapperreduce的应用(2)注:本片没写完](https://abell4.github.io/hadoop/mapreducelitow)
+		- [mapperreduce的应用(3)](https://abell4.github.io/hadoop/mapreducethree)
+		- [mapperreduce的应用(4)](https://abell4.github.io/hadoop/mapreducefour)
+		- []()
+		- []()
+		- []()

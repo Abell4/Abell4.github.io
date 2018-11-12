@@ -30,3 +30,5 @@
 	- [Hadoop单点配置](https://abell4.github.io/hadoop/danhadoop)
 	- [Hadoop伪分布式配置](https://abell4.github.io/hadoop/weihadoop)
 	- [Hadoop完全分布式配置](https://abell4.github.io/hadoop/fenhadoop)
+	- hdfs介绍
+	- mapreduce介绍

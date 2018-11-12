@@ -1,6 +1,6 @@
-# joinÔÚmapreduceÖĞµÄÓ¦ÓÃ:
-## ¾ßÌåÊÂÀı:
-### Éú³ÉÀà:
+# joinåœ¨mapreduceä¸­çš„åº”ç”¨:
+## å…·ä½“äº‹ä¾‹:
+### ç”Ÿæˆç±»:
 	- 
 		- public class JoinBean implements Writable{
 	 
@@ -21,8 +21,8 @@
 			paramDataOutput.writeInt(ck);
 			paramDataOutput.writeInt(flag);
 		}
-		- ÏÂÃæÁ½¸öÊÇ¼Ì³Ğ(implements)WritableËùÉú³ÉµÄ·½·¨:
-			- Ö÷ÒªÓÃÍ¾ÊÇÔÚĞ´ÈëÊ±½øĞĞĞòÁĞ»¯Óë·´ĞòÁĞ»¯
+		- ä¸‹é¢ä¸¤ä¸ªæ˜¯ç»§æ‰¿(implements)Writableæ‰€ç”Ÿæˆçš„æ–¹æ³•:
+			- ä¸»è¦ç”¨é€”æ˜¯åœ¨å†™å…¥æ—¶è¿›è¡Œåºåˆ—åŒ–ä¸ååºåˆ—åŒ–
 		@Override
 		public void readFields(DataInput in) throws IOException {
 			// TODO Auto-generated method stub
@@ -34,7 +34,7 @@
 			this.flag = in.readInt();
 		}
 		
-		- ¹¹Ôì·½·¨:,ÓÃÓÚ¸øaa.txt¸³Öµ
+		- æ„é€ æ–¹æ³•:,ç”¨äºç»™aa.txtèµ‹å€¼
 		public void setaa(int oid,String goodsId,int count){
 			this.oid = oid;
 			this.goodsId = goodsId;
@@ -42,10 +42,10 @@
 			this.flag = 0;
 			this.goodsname = "";
 			this.ck = -1;
-			// Ã»ÓĞ»ñÈ¡µÄÖµÒ²Òª¸øÆä¸³Öµ,·ñÔò»á³öÏÖ¿ÕÖ¸ÕëÒì³£.
+			// æ²¡æœ‰è·å–çš„å€¼ä¹Ÿè¦ç»™å…¶èµ‹å€¼,å¦åˆ™ä¼šå‡ºç°ç©ºæŒ‡é’ˆå¼‚å¸¸.
 		}
 		
-		- ¹¹Ôì·½·¨:ÓÃÓÚ¸øbb.txt¸³Öµ
+		- æ„é€ æ–¹æ³•:ç”¨äºç»™bb.txtèµ‹å€¼
 		public void setbb( String goodsId,String goodsname,int ck){
 			this.goodsname = goodsname;
 			this.ck = ck;
@@ -55,7 +55,7 @@
 			this.count = 0;
 		}
 		
-        - tostring·½·¨:
+        - tostringæ–¹æ³•:
 		@Override
 		public String toString() {
 			return  oid + "\t" + goodsId + "\t" + count + "\t" + goodsname
@@ -121,4 +121,4 @@
 
 	}
 
-### map·½·¨
+### mapæ–¹æ³•

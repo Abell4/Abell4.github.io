@@ -1,5 +1,5 @@
-# outputformatÓëinputformatµÄ×Ô¶¨Òå¸ÄĞ´:
-## Ö÷·½·¨:
+# outputformatä¸inputformatçš„è‡ªå®šä¹‰æ”¹å†™:
+## ä¸»æ–¹æ³•:
 ### ......................
 	- public static void main(String[] args)
 		    throws Exception
@@ -17,7 +17,7 @@
 		    Job job = Job.getInstance(conf, "word count");
 		    job.setJarByClass(MyInputTest.class);
 		    job.setMapperClass(SelfMap.class);
-				- ÏÂÃæÊÇµ÷ÓÃinputÓëoutput·½·¨:
+				- ä¸‹é¢æ˜¯è°ƒç”¨inputä¸outputæ–¹æ³•:
 		    job.setInputFormatClass(SelfInputFormat .class);
 		    job.setOutputFormatClass(SelfOutputFormat.class);
 		    job.setNumReduceTasks(0);
@@ -33,9 +33,9 @@
 		    System.exit(job.waitForCompletion(true) ? 0 : 1);
 		  }
 		  
-## È»ºó½øĞĞoutputµÄ±àĞ´:
+## ç„¶åè¿›è¡Œoutputçš„ç¼–å†™:
 ### ........................
-	- ¶Ôoutputformat½øĞĞ±àĞ´;
+	- å¯¹outputformatè¿›è¡Œç¼–å†™;
 		- public class SelfOutputFormat extends FileOutputFormat<Text, Text>{
 
 
@@ -51,7 +51,7 @@
 		Path  errorr = new Path(error);
 		FSDataOutputStream succteam ;
 		FSDataOutputStream errorteam ;
-		- ´Ë´¦Ò»¶¨Òª×¢Òâ;Èç¹ûÒ»Î¶µÄÓÃcreateµÄ»°¾Í»áÒ»Ö±¸²¸ÇÎÄ¼ş,×îºóÎÄ¼şÖĞÖ»±£Áô×îºóÒ»ÌõÊı¾İ.ËùÒÔ´Ë´¦Òª¼ÓÉÏÒ»¸öifÅĞ¶¨:
+		- æ­¤å¤„ä¸€å®šè¦æ³¨æ„;å¦‚æœä¸€å‘³çš„ç”¨createçš„è¯å°±ä¼šä¸€ç›´è¦†ç›–æ–‡ä»¶,æœ€åæ–‡ä»¶ä¸­åªä¿ç•™æœ€åä¸€æ¡æ•°æ®.æ‰€ä»¥æ­¤å¤„è¦åŠ ä¸Šä¸€ä¸ªifåˆ¤å®š:
 		if (fileSystem.isFile(succc)) {
 			succteam = fileSystem.append(new Path(succ));
 		}else {
@@ -109,15 +109,15 @@
 	@Override
 	public boolean nextKeyValue() throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
-		// ÏÈÏëºÃ¿ª¹ØÔõÃ´ÉèÖÃ
-		//  ÒòÎª ÎÒÃÇÒªÒ»´ÎĞÔ½«Õû¸öÎÄ¼ş¶Á³ö;
+		// å…ˆæƒ³å¥½å¼€å…³æ€ä¹ˆè®¾ç½®
+		//  å› ä¸º æˆ‘ä»¬è¦ä¸€æ¬¡æ€§å°†æ•´ä¸ªæ–‡ä»¶è¯»å‡º;
 		if (res) {
 			FileSystem fileSystem = FileSystem.get(conf);
 			FSDataInputStream open = fileSystem.open(files.getPath());
 			byte[] buf = new byte[(int)files.getLength()];
 			IOUtils.readFully(open,buf, 0, buf.length);
-			// ½«½á¹ûĞ´Èëµ½ÎÒÃÇ¶ÔÓ¦µÄÊôĞÔÖĞ,
-			// ¹©¶ÔÓ¦µÄ·½·¨½øĞĞµ÷ÓÃ
+			// å°†ç»“æœå†™å…¥åˆ°æˆ‘ä»¬å¯¹åº”çš„å±æ€§ä¸­,
+			// ä¾›å¯¹åº”çš„æ–¹æ³•è¿›è¡Œè°ƒç”¨
 			valueText.set(buf,0,buf.length);
 			res = false;
 			return true;
@@ -127,7 +127,7 @@
 
 }
 
-## input·½·¨µÄ±àĞ´:
+## inputæ–¹æ³•çš„ç¼–å†™:
 ### .....................................
 	- public class SelfInputFormat extends FileInputFormat<NullWritable, Text>{
 
@@ -185,7 +185,7 @@
 
 }
 
-## map·½·¨µÄ±àĞ´:
+## mapæ–¹æ³•çš„ç¼–å†™:
 ### ...................................
 	- public class SelfMap extends Mapper<NullWritable, Text, Text, Text> {
 	private  Text fileText = new Text();

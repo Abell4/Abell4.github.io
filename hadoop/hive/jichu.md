@@ -50,6 +50,14 @@
 		- systemctl start mysqld
 	- mysql -u root -p(没密码) 登录mysql
 	- 设置密码 一定要设置...
+	-修改密码：
+		UPDATE mysql.user SET authentication_string=PASSWORD('6757DUgu') where USER='root';
+		MySQL> UPDATE mysql.user SET Password=PASSWORD('新密码') where USER='root’;
+		MySQL> flush privileges;
+		MySQL> exit
+
+
+上传一个mysql的驱动jar包到hive的安装目录的lib中
 	- 设置mysql能够远程访问
 	- 在 hive(就是你解压缩hive的文件夹)hive/conf目录下创建hive-site.xml,并加入链接mysql数据库的配置
 		- <configuration>
@@ -67,9 +75,34 @@
 	        </property>
 	        <property>
 	                <name>javax.jdo.option.ConnectionPassword</name>
-	                <value>123456</value>
+	                <value>123</value>
 	        </property>
 		</configuration>
+	- 在你的datanode与namemnode中插入如下:
+		-  <property>
+
+    <name>yarn.resourcemanager.address</name>
+
+    <value>172.18.24.195:8032</value>
+
+  </property>
+
+  <property>
+
+    <name>yarn.resourcemanager.scheduler.address</name>
+
+    <value>172.18.24.195:8030</value>
+
+  </property>
+
+  <property>
+
+    <name>yarn.resourcemanager.resource-tracker.address</name>
+
+    <value>172.18.24.195:8031</value>
+
+  </property>
+
 	- 启动看是否正常使用
 
 

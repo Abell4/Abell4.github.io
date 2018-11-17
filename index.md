@@ -44,3 +44,7 @@
 		- []()
 		- []()
 		- []()
+	- hive
+		- [hive的配置](https://abell4.github.io/hadoop/hive/jichu)
+		- [hive1](https://abell4.github.io/hadoop/hive/hive1)
+		- [hive2](https://abell4.github.io/hadoop/hive/hive2)
